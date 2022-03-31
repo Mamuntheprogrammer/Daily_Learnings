@@ -15,7 +15,13 @@ The built-in namespace encompasses the global namespace and the global namespace
 * Global Namespace
 * Local Namespace 
 
-Check the namespace from the scope using DIR() builtin function 
+The lifetime of a namespace :
+ 
+A lifetime of a namespace depends upon the scope of objects, if the scope of an object ends, the lifetime of that namespace comes to an end.
+Hence, it is not possible to access the inner namespace’s objects from an outer namespace.
+
+
+** Check the namespace from the scope using DIR() builtin function 
 
 
 LEGB Scope :
