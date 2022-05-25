@@ -188,7 +188,10 @@ print(visitors[1::2])
 
 
 # ******************************* Example  zip ***********************************
-# Example 2 : 
+''' Example 2 : Your data consists of the column names and the employee data
+organized as list of tuples (rows). Assign the column names to
+the rows and, thus, create a list of dictionaries. Each dictionary
+assigns the column names to the respective data values '''
 
 lst_1 = [1, 2, 3]
 lst_2 = [4, 5, 6]
@@ -204,6 +207,20 @@ print(list(lst_2_new))
 
 
 
+
+## Data
+column_names = ['name', 'salary', 'job']
+
+db_rows = [('Alice', 180000, 'data scientist'),
+('Bob', 99000, 'mid-level manager'),
+('Frank', 87000, 'CEO')]
+
+
+## One-Liner
+db = [dict(zip(column_names, row)) for row in db_rows]
+
+print(db)
+
 # Example 2 :
 
 # ******************************************************************************
@@ -217,7 +234,7 @@ print(list(lst_2_new))
 
 
 
-# ******************************* Example  2 ***********************************
+# ******************************* Example  1 ***********************************
 # Example 1 : TO FIND TOP EARNERS USING LOOP
 
 employees = {'Alice' : 100000,'Bob' : 99817,'Carol' : 122908,'Frank' : 88123,'Eve' : 93121}
@@ -260,6 +277,47 @@ print(illegal)
 
 
 # ******************************************************************************
+
+# ******************************* Example  3 ***********************************
+# Example 3 : swap the keys and values 5 different way
+
+
+
+my_dict = {1: 'a', 2: 'b', 3: 'c'}
+
+
+swapped = {v: k for k, v in my_dict.items()}
+print(swapped)
+swapped = dict(zip(my_dict.values(), my_dict))
+print(swapped)
+swapped = dict(zip(my_dict.values(), my_dict.keys()))
+print(swapped)
+swapped = dict(map(reversed, my_dict.items()))
+print(swapped)
+
+
+
+# Example 3 :
+
+# ******************************************************************************
+# ******************************* Example  3 ***********************************
+# Example 3 : Merge Dictionary
+
+dict1 = {'w': 1, 'x': 1}
+dict2 = {'x': 2, 'y': 2, 'z': 2}
+
+
+{k: v for d in [dict1, dict2] for k, v in d.items()}
+
+{**dict1, **dict2}
+
+
+# Example 3 :
+
+# ******************************************************************************
+
+
+
 
 
 
