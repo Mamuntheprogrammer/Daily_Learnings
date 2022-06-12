@@ -1,0 +1,21 @@
+Html notes :
+Entities
+css Image property : 
+object-fit :cover
+
+video & audio :
+bolean attribute : controls autoplay loop 
+
+list :
+ul + ol + li 
+dl+dt+dd
+
+container :
+1.Generic
+    * div (block level)
+    * span (inline)
+2.Semantic
+    * article
+    * figure
+    * mark
+    * time
