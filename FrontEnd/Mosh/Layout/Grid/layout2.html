@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: snow;
+        font-size: 2rem;
+      }
+      .item {
+        background-color: #fff;
+        border: 3px solid tomato;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        height: 50vh;
+      }
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+      }
+      .item1 {
+        grid-column: 2 / span 4;
+      }
+      .item2 {
+        grid-column: 6 / span 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+    </div>
+  </body>
+</html>

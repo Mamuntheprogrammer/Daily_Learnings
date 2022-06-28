@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .item {
+        font-size: 2rem;
+        background-color: #fff;
+        border: 3px solid tomato;
+        border-radius: 5px;
+        padding: 8px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      .container {
+        display: grid;
+        height: 100vh;
+        gap: 1rem;
+        grid-template-rows: auto auto 1fr auto auto auto;
+        grid-template-areas:
+          "header"
+          "navigation"
+          "main"
+          "sidebar"
+          "ads"
+          "footer";
+      }
+
+      .header {
+        grid-area: header;
+      }
+      .navigation {
+        grid-area: navigation;
+      }
+      .main {
+        grid-area: main;
+      }
+      .sidebar {
+        grid-area: sidebar;
+      }
+      .ads {
+        grid-area: ads;
+      }
+      .footer {
+        grid-area: footer;
+      }
+
+      @media (min-width: 720px) {
+        .container {
+          grid-template-areas:
+            "header header header"
+            "navigation navigation navigation"
+            "sidebar main main"
+            "ads footer footer";
+
+          grid-template-rows: auto auto 1fr auto;
+        }
+      }
+
+      @media (min-width: 1020px) {
+        .container {
+          grid-template-areas:
+            "header header header header"
+            "sidebar  navigation navigation ads"
+            "sidebar main main ads"
+            "footer footer footer footer";
+
+          grid-template-rows: auto auto 1fr auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item header">header</div>
+      <div class="item navigation">navigation</div>
+      <div class="item main">main</div>
+      <div class="item sidebar">sidebar</div>
+      <div class="item ads">ads</div>
+      <div class="item footer">footer</div>
+    </div>
+  </body>
+</html>
