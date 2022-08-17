@@ -1,0 +1,71 @@
+html{
+    font-size: 62.5%;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: o;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 80vw;
+    /* background-color: tomato; */
+    margin: .5rem ;
+    
+}
+
+.box1{
+    background: url(https://picsum.photos/500/300);
+}
+.box2{
+    background: url(https://picsum.photos/400/300);
+}
+.box3{
+    background: url(https://picsum.photos/350/300);
+}
+.box4{
+    background: url(https://picsum.photos/400/300);
+}
+.box5{
+    background: url(https://picsum.photos/400/300);
+}
+
+.panel{
+    height:70vh;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    border-radius: 4rem;
+    flex: .5;
+    position: relative;
+    margin: 5px;
+    transition: flex .7s ease-in;
+    cursor: pointer;
+}
+
+.panel h2{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.panel.active{
+    flex:2;
+
+}
+
+.panel.active h2{
+    opacity: 1;
+    
+}
