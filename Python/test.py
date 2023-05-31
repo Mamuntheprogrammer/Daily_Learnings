@@ -1,16 +1,25 @@
-import pyHook
+s = "anagram"
+t = "nagaram"
 
-def on_keyboard_event(event):
-    # Print the key that was pressed
-    print(event.Key)
-    # Return True to pass the event to other handlers
-    return True
+countS, countT = {}, {}
 
-# Create a hook manager
-hook_manager = pyHook.HookManager()
-# Register the on_keyboard_event callback for all keyboard events
-hook_manager.KeyDown = on_keyboard_event
-# Hook the keyboard
-hook_manager.HookKeyboard()
-# Start the event loop
-pythoncom.PumpMessages()
+# for i in range(len(s)):
+#     countS[s[i]] = 1 + countS.get(s[i], 0)
+#     countT[t[i]] = 1 + countT.get(t[i], 0)
+
+
+# print(countT,countS)
+
+
+# for x in range(len(s)):
+# 	countT[s[i]] = 
+
+
+a = { }
+
+
+a['s'] = 1 + a.get('s',7)
+
+
+print(a)
+
