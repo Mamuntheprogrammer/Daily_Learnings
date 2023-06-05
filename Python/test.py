@@ -1,25 +1,10 @@
-s = "anagram"
-t = "nagaram"
+nums = [2,7,11,15]
+target = 9
 
-countS, countT = {}, {}
+temp = {}
 
-# for i in range(len(s)):
-#     countS[s[i]] = 1 + countS.get(s[i], 0)
-#     countT[t[i]] = 1 + countT.get(t[i], 0)
-
-
-# print(countT,countS)
-
-
-# for x in range(len(s)):
-# 	countT[s[i]] = 
-
-
-a = { }
-
-
-a['s'] = 1 + a.get('s',7)
-
-
-print(a)
-
+for i,v in enumerate(nums):
+	trg = target-v
+	if trg in temp:
+		print(i,temp[trg])
+	temp[v]=i
