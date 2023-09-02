@@ -1,7 +1,7 @@
-import pysnooper
+import time
 
-@pysnooper.snoop()
-def sam(x,y):
-	return x+y
+start = time.time()
+for x in range(100):
+	print(x)
 
-sam(2,4)
+print("How much time it Took :" ,time.time()-start)
