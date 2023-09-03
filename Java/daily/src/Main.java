@@ -1,3 +1,5 @@
+package daily.src;
+
 import java.util.Date;
 
 public class Main {
