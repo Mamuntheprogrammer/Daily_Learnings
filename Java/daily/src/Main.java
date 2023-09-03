@@ -1,3 +1,5 @@
+import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
@@ -38,7 +40,7 @@ public class Main {
         System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(numbers2));
 
-//        this is for test purpose 
+//        this is for test purpose
 
 
 
