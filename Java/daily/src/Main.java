@@ -41,6 +41,13 @@ public class Main {
         System.out.println(Arrays.toString(numbers2));
 
 //        this is for test purpose
+//        multi dimentional array
+
+        int[][] marray = new int[2][3];
+        int[][] marray2 = {{1,2,3},{2,3,4}};
+        marray[0][0] =  1;
+        System.out.println(Arrays.deepToString(marray));
+        System.out.println(Arrays.deepToString(marray2));
 
 
 
