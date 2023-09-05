@@ -1,7 +1,8 @@
-import time
+def c_2_f(c):
+	return c*9.0/5+32
 
-start = time.time()
-for x in range(100):
-	print(x)
-
-print("How much time it Took :" ,time.time()-start)
+def mysum(x):
+	total = 0
+	for i in range(x+1):
+		total += i
+	return total
