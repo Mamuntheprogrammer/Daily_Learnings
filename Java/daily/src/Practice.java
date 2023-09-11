@@ -1,10 +1,14 @@
+import java.io.Console;
+import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Practice {
     public static void main(String[] args) {
-        var textBox = new OOP();
-        textBox.setStr("Hi from mamun");
-        System.out.printf(textBox.text);
-    }
+       int i[] = {12,2,53,4};
+        Arrays.sort(i);
+        System.out.println(Arrays.toString(i));
 
-}
+        
+
+}}
