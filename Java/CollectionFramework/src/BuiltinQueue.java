@@ -4,7 +4,7 @@ import java.util.Queue;
 
 public class BuiltinQueue {
 
-
+// we can use linkedlist and arraydeque both for implementing Queue 
 
     public static void main(String[] args) {
 //        Queue<Integer> q = new LinkedList<>();
