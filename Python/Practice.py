@@ -1,7 +1,7 @@
-for x in range(5,0,-1):
-	print(x)
 
+while True:
+	import pyautogui
+	import time
 
-s = "abc"
-
-print(s[::-1])
+	time.sleep(600)
+	pyautogui.click(x=500,y=500,button='right')
