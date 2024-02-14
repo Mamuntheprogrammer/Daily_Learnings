@@ -1,0 +1,43 @@
+# xpath stands for xml path language
+
+#  xpath syntax =
+#  //tagName[@AttributeName="value"]
+# //tagName[contains(@AttributeName="value")]
+# //tagName[(expression 1) and (expression 2)]
+#
+# Xpath Playground  =  https://scrapinghub.github.io/xpath-playground/
+# "//" "/" "." ".." "*" lear this
+
+
+Selecting Nodes by Tag Name:
+
+Syntax: //tagname
+Example: //div selects all <div> elements in the document.
+Selecting Nodes by Attribute:
+
+Syntax: //tagname[@attribute='value']
+Example: //input[@name='username'] selects all <input> elements with name attribute equal to 'username'.
+Selecting Nodes by Position:
+
+Syntax: (//tagname)[position]
+Example: (//div)[1] selects the first <div> element in the document.
+Selecting Nodes by Partial Text:
+
+Syntax: //tagname[contains(@attribute, 'text')]
+Example: //a[contains(@href, 'example')] selects all <a> elements whose href attribute contains the word 'example'.
+Selecting Nodes by Class Name:
+
+Syntax: //tagname[@class='classname']
+Example: //div[@class='content'] selects all <div> elements with class attribute equal to 'content'.
+Selecting Nodes by Child/Descendant Relationships:
+
+Syntax: //parent/child or //ancestor/descendant
+Example: //div/p selects all <p> elements that are children of <div> elements.
+Selecting Nodes by Multiple Conditions:
+
+Syntax: //tagname[condition1 and condition2]
+Example: //input[@type='text' and @name='username'] selects all <input> elements with both type 'text' and name 'username'.
+Selecting Nodes by Index:
+
+Syntax: (//tagname)[index]
+Example: (//div)[3] selects the third <div> element in the document.
