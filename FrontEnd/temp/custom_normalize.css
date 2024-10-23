@@ -1,0 +1,32 @@
+/* Normalize CSS */
+/* Set consistent box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+html {
+    line-height: 1.15; /* Improve readability */
+    -webkit-text-size-adjust: 100%; /* Prevent text size adjustments */
+    font-size : 62.5%;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  
+  /* Additional normalize styles */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  button, input, select, textarea {
+    font: inherit; /* Inherit font settings */
+  }
+  

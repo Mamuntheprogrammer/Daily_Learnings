@@ -1,26 +1,12 @@
-h2{
-    color: green;
-    text-transform: uppercase;
+html{
+    font-size: 62.5%;
 }
 
-
-.one::after{
-    content: "-->";
-    margin-left: 5px;
-    transition: margin .15s;
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.one:hover::after{
-    margin-left: 15px;
-    margin-left: 15px;
-    margin-left: 15px;
-    margin-left: 15px;
-    margin-left: 15px;
-    margin-left: 15px;
-    margin-left: 15px;
-    margin-left: 15px;
-    margin-left: 15px;
-
-    
-    
+.one{
+    font-size: 10rem;
 }

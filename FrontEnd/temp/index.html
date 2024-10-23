@@ -2,16 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags Example</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="scripts.js"></script>
-    <title>Document</title>
+    <style></style>
   </head>
   <body>
-    <h1>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
-      laborum magni eaque vero atque quaerat natus unde aliquam omnis adipisci.
-    </h1>
+    <header>
+      <h1>HTML Tags Example</h1>
+      <nav>
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="section1">
+        <h2>Section 1: Block-Level Elements</h2>
+        <article>
+          <h3>Article Heading</h3>
+          <p>
+            This is a paragraph inside an article. It includes various
+            <strong>strong</strong> and <em>emphasized</em> texts.
+          </p>
+          <blockquote>
+            <p>
+              This is a blockquote element used for citing quotes from other
+              sources.
+            </p>
+          </blockquote>
+          <div>
+            <p>Nested inside a div tag, this is another paragraph element.</p>
+          </div>
+        </article>
+      </section>
+      <section id="section2">
+        <h2>Section 2: Inline Elements</h2>
+        <p>Here is a list of inline elements:</p>
+        <ul>
+          <li>
+            <span>This is a <b>bold</b> span.</span>
+          </li>
+          <li>
+            <span>This is an <i>italic</i> span.</span>
+          </li>
+          <li>
+            <span
+              >This is a
+              <abbr title="Hypertext Markup Language">HTML</abbr>
+              abbreviation.</span
+            >
+          </li>
+          <li>
+            <span>This is a <code>code</code> element.</span>
+          </li>
+          <li>
+            <span
+              >This is an <input type="text" placeholder="Input field"
+            /></span>
+          </li>
+          <li>
+            <span>This is an <button>HTML button</button></span>
+          </li>
+        </ul>
+      </section>
+      <section id="section3">
+        <h2>Section 3: Tables and Forms</h2>
+        <table>
+          <caption>
+            Sample Table
+          </caption>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 2</td>
+            </tr>
+            <tr>
+              <td>Row 2, Cell 1</td>
+              <td>Row 2, Cell 2</td>
+            </tr>
+          </tbody>
+        </table>
+        <form>
+          <fieldset>
+            <legend>Form Example</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br /><br />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br /><br />
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 HTML Tags Example. All rights reserved.</p>
+    </footer>
   </body>
 </html>
