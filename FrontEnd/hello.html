@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sequential Playback</title>
+</head>
+<body>
+    <div id="player"></div>
+
+    <script>
+        // Load YouTube IFrame API
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        var segments = [
+            { start: 1, end: 4 },
+            { start: 10, end: 13.5 }, // Play from 10s to 20s
+            { start: 5, end: 9  }, // Play from 40s to 50s
+            { start: 14, end: 18 }  // Play from 60s to 70s
+        ];
+        var currentSegment = 0;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: '6NwaOR3orAY', // Replace with your YouTube video ID
+                events: {
+                    'onReady': playSegment,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function playSegment() {
+            if (currentSegment < segments.length) {
+                player.seekTo(segments[currentSegment].start);
+                player.playVideo();
+            }
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.PLAYING) {
+                setTimeout(() => {
+                    player.pauseVideo();
+                    currentSegment++;
+                    if (currentSegment < segments.length) {
+                        playSegment();
+                    }
+                }, (segments[currentSegment].end - segments[currentSegment].start) * 1000);
+            }
+        }
+    </script>
+</body>
+</html>
